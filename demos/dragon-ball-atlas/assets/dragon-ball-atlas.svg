@@ -1,0 +1,70 @@
+<svg width="2400" height="1600" viewBox="0 0 2400 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="2400" y2="1600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1221"/>
+      <stop offset="0.55" stop-color="#101C33"/>
+      <stop offset="1" stop-color="#07111D"/>
+    </linearGradient>
+    <linearGradient id="land" x1="280" y1="320" x2="1720" y2="1320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#203A2A"/>
+      <stop offset="1" stop-color="#142B1F"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="2400" y2="1600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12253F"/>
+      <stop offset="1" stop-color="#0A1526"/>
+    </linearGradient>
+    <filter id="blurGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="28" />
+    </filter>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="2400" height="1600" fill="url(#sky)"/>
+  <rect width="2400" height="1600" fill="url(#grid)" opacity="0.35"/>
+
+  <circle cx="370" cy="260" r="220" fill="#F4C542" opacity="0.08" filter="url(#blurGlow)"/>
+  <circle cx="2120" cy="380" r="260" fill="#4BE38B" opacity="0.08" filter="url(#blurGlow)"/>
+  <circle cx="1220" cy="1260" r="320" fill="#8AE0FF" opacity="0.06" filter="url(#blurGlow)"/>
+
+  <path d="M230 840C300 660 430 560 590 538C748 515 898 585 990 706C1084 826 1100 980 1016 1110C923 1254 769 1334 574 1340C394 1346 268 1248 214 1120C159 989 163 923 230 840Z" fill="url(#land)" opacity="0.92"/>
+  <path d="M985 640C1070 520 1218 446 1380 438C1552 430 1710 510 1788 646C1860 772 1864 952 1780 1080C1682 1232 1512 1304 1310 1295C1118 1286 980 1200 920 1068C858 934 892 776 985 640Z" fill="url(#land)" opacity="0.9"/>
+  <path d="M1410 250C1470 196 1540 174 1626 178C1728 182 1802 232 1836 320C1868 406 1860 486 1816 556C1768 632 1676 684 1590 678C1492 670 1424 618 1392 534C1360 448 1352 326 1410 250Z" fill="#1A3127" opacity="0.94"/>
+  <path d="M1000 1460C1086 1416 1192 1398 1310 1400C1430 1404 1544 1432 1648 1480L1400 1540H980C960 1508 966 1480 1000 1460Z" fill="#0F1D2B" opacity="0.92"/>
+  <path d="M1780 350C1870 290 1988 254 2118 252C2220 252 2308 286 2364 350C2320 410 2246 452 2156 470C2058 488 1946 474 1862 438C1816 420 1788 388 1780 350Z" fill="#192A45" opacity="0.9"/>
+  <circle cx="1490" cy="290" r="88" fill="#20394D" opacity="0.7"/>
+
+  <path d="M336 730C424 662 542 628 670 636C780 642 858 690 908 760C848 806 764 846 658 854C532 862 422 832 336 730Z" fill="#2F5239" opacity="0.82"/>
+  <path d="M442 992C500 946 586 918 690 924C768 928 836 954 888 996C850 1044 782 1082 696 1094C582 1110 494 1074 442 992Z" fill="#35573E" opacity="0.82"/>
+  <path d="M1080 714C1168 664 1272 644 1382 646C1498 650 1598 686 1662 752C1582 820 1478 854 1360 856C1244 858 1148 826 1080 714Z" fill="#274733" opacity="0.84"/>
+  <path d="M1120 1040C1212 978 1330 954 1464 962C1562 970 1638 1008 1686 1072C1602 1138 1492 1178 1368 1180C1242 1182 1156 1140 1120 1040Z" fill="#31563C" opacity="0.86"/>
+
+  <path d="M190 1264C280 1208 392 1180 524 1186C640 1192 726 1222 792 1284C744 1348 660 1390 548 1406C422 1422 310 1392 190 1264Z" fill="#213A54" opacity="0.9"/>
+  <path d="M816 1180C864 1138 932 1110 1024 1098C1106 1088 1184 1100 1258 1138C1196 1200 1114 1240 1012 1248C912 1256 846 1228 816 1180Z" fill="#0F2637" opacity="0.78"/>
+
+  <circle cx="540" cy="312" r="46" fill="#F4C542" opacity="0.2"/>
+  <circle cx="2130" cy="178" r="58" fill="#FF7A59" opacity="0.18"/>
+  <circle cx="2172" cy="430" r="68" fill="#4BE38B" opacity="0.16"/>
+  <circle cx="1292" cy="1004" r="38" fill="#8AE0FF" opacity="0.16"/>
+
+  <g opacity="0.55">
+    <path d="M 140 260 C 250 210 358 198 470 224" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-dasharray="10 12"/>
+    <path d="M 1820 1080 C 1940 1040 2060 1030 2210 1060" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-dasharray="10 12"/>
+    <path d="M 622 1410 C 760 1360 902 1352 1070 1386" stroke="rgba(255,255,255,0.18)" stroke-width="2" stroke-dasharray="10 12"/>
+    <path d="M 1200 120 C 1290 96 1380 92 1484 108" stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-dasharray="10 12"/>
+  </g>
+
+  <g fill="#F4F6FB" opacity="0.78" font-family="Inter, Arial, sans-serif" font-size="30" letter-spacing="0.04em">
+    <text x="250" y="560">Tierra del Este</text>
+    <text x="1070" y="560">Planeta Namek</text>
+    <text x="1940" y="255">Sector Saiyan</text>
+    <text x="1540" y="1430">Mundo Divino</text>
+    <text x="178" y="1324">Islas y costas</text>
+  </g>
+
+  <g fill="#AAB7D4" opacity="0.8" font-family="Inter, Arial, sans-serif" font-size="18">
+    <text x="390" y="151">Cronologia: Origenes -> Super</text>
+    <text x="1260" y="1525">Mapa estilizado para marcadores interactivos</text>
+  </g>
+</svg>

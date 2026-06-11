@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dragon Ball Atlas Interactivo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow--one" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--two" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <main class="shell">
+    <header class="hero panel">
+      <div>
+        <p class="eyebrow">Atlas cronologico de Dragon Ball</p>
+        <h1>Mapa interactivo de localizaciones, personajes y habilidades</h1>
+        <p class="hero__copy">
+          Explora la cronologia por saga, salta entre localizaciones y abre cada punto para ver que personajes y habilidades pasan por alli.
+        </p>
+      </div>
+      <div class="hero__meta">
+        <div class="meta-chip">
+          <span class="meta-chip__label">Vista</span>
+          <strong>SVG + capas</strong>
+        </div>
+        <div class="meta-chip">
+          <span class="meta-chip__label">Tiempo</span>
+          <strong id="year-label">Año 778</strong>
+        </div>
+      </div>
+    </header>
+
+    <aside class="panel sidebar sidebar--left">
+      <section class="section">
+        <h2>Buscador</h2>
+        <label class="field">
+          <span>Buscar por lugar, personaje o habilidad</span>
+          <input id="search-input" type="search" placeholder="Ej. Namek, Goku, Kamehameha" />
+        </label>
+        <p id="search-summary" class="section__hint">Escribe para filtrar el mapa y la cronologia.</p>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2>Sagas</h2>
+          <button id="reset-filters" class="ghost" type="button">Reset</button>
+        </div>
+        <div id="saga-chips" class="chip-row" aria-label="Filtrar por saga"></div>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2>Cronologia</h2>
+          <span id="cutoff-label" class="muted"></span>
+        </div>
+        <input id="year-slider" type="range" min="732" max="778" value="778" step="1" />
+        <p class="section__hint">Mueve el deslizador para ocultar eventos posteriores y ver como crece el mundo de Dragon Ball.</p>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2>Linea de tiempo</h2>
+          <span id="event-count" class="muted"></span>
+        </div>
+        <div id="timeline" class="timeline"></div>
+      </section>
+    </aside>
+
+    <section class="panel map-panel">
+      <div class="map-panel__head">
+        <div>
+          <h2>Mapa principal</h2>
+          <p class="muted">Haz click en un marcador para fijarlo en el panel de detalle.</p>
+        </div>
+        <div class="legend" aria-label="Leyenda del mapa">
+          <span><i class="legend__swatch legend__swatch--home"></i>Hogar</span>
+          <span><i class="legend__swatch legend__swatch--battle"></i>Batalla</span>
+          <span><i class="legend__swatch legend__swatch--cosmic"></i>Cosmico</span>
+        </div>
+      </div>
+      <div id="map" class="map" aria-label="Mapa interactivo"></div>
+    </section>
+
+    <aside class="panel sidebar sidebar--right">
+      <section class="section">
+        <div class="section__head">
+          <h2>Detalle</h2>
+          <span id="detail-state" class="muted">Selecciona una localizacion o personaje</span>
+        </div>
+        <article id="location-card" class="detail-card">
+          <p class="detail-card__empty">Pulsa un marcador o una linea de tiempo para ver el contexto completo.</p>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Personajes conectados</h2>
+        <div id="character-grid" class="entity-grid"></div>
+      </section>
+
+      <section class="section">
+        <h2>Habilidades destacadas</h2>
+        <div id="ability-cloud" class="ability-cloud"></div>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2>Grafo de relaciones</h2>
+          <span id="graph-state" class="muted">Personaje, técnicas y sagas</span>
+        </div>
+        <svg id="relationship-graph" class="relationship-graph" viewBox="0 0 420 360" role="img" aria-label="Grafo de relaciones del elemento seleccionado"></svg>
+      </section>
+
+      <section class="section">
+        <div class="stats">
+          <article class="stat">
+            <span>Localizaciones visibles</span>
+            <strong id="visible-locations">0</strong>
+          </article>
+          <article class="stat">
+            <span>Eventos visibles</span>
+            <strong id="visible-events">0</strong>
+          </article>
+          <article class="stat">
+            <span>Personajes relacionados</span>
+            <strong id="visible-characters">0</strong>
+          </article>
+          <article class="stat">
+            <span>Habilidades relacionadas</span>
+            <strong id="visible-abilities">0</strong>
+          </article>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <script src="./dbz-data.js"></script>
+  <script src="./assets/portraits-v5.js"></script>
+  <script src="./app-v5.js"></script>
+</body>
+</html>

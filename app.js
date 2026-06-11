@@ -4,9 +4,10 @@ const projects = [
     category: "Web app",
     description: "Explorador de personajes con fichas visuales, datos y navegación rápida.",
     tech: ["HTML", "CSS", "JavaScript"],
+    demoUrl: "./demos/dragon-ball-atlas/",
     links: [
-      { label: "Demo", href: "#" },
-      { label: "GitHub", href: "#" }
+      { label: "Demo", href: "./demos/dragon-ball-atlas/" },
+      { label: "GitHub", href: "https://github.com/jorgballgar06" }
     ]
   },
   {
@@ -14,9 +15,10 @@ const projects = [
     category: "Dashboard",
     description: "Aplicación para ver el tiempo semanal con búsqueda de ciudades y comparación.",
     tech: ["Open-Meteo", "Canvas", "Vanilla JS"],
+    demoUrl: "./demos/weather-week/",
     links: [
-      { label: "Demo", href: "#" },
-      { label: "GitHub", href: "#" }
+      { label: "Demo", href: "./demos/weather-week/" },
+      { label: "GitHub", href: "https://github.com/jorgballgar06" }
     ]
   },
   {
@@ -24,9 +26,10 @@ const projects = [
     category: "Tooling",
     description: "Generador de proyectos para crear páginas base y acelerar prototipos.",
     tech: ["Node.js", "Templates", "Automation"],
+    demoUrl: "./demos/micro-saas-store-generator/",
     links: [
-      { label: "Demo", href: "#" },
-      { label: "GitHub", href: "#" }
+      { label: "Demo", href: "./demos/micro-saas-store-generator/" },
+      { label: "GitHub", href: "https://github.com/jorgballgar06" }
     ]
   }
 ];
@@ -52,7 +55,10 @@ function createProjectCard(project) {
   article.className = "project-card";
 
   const techTags = project.tech.map((item) => `<span class="pill">${item}</span>`).join("");
-  const linkTags = project.links.map((link) => `<a href="${link.href}">${link.label}</a>`).join("");
+  const linkTags = project.links.map((link, index) => {
+    const primaryClass = index === 0 ? " project-card__link--primary" : "";
+    return `<a class="project-card__link${primaryClass}" href="${link.href}" target="${link.href.startsWith("http") ? "_blank" : "_self"}" rel="${link.href.startsWith("http") ? "noreferrer" : ""}">${link.label}</a>`;
+  }).join("");
 
   article.innerHTML = `
     <div class="project-card__top">
@@ -60,7 +66,7 @@ function createProjectCard(project) {
         <p class="eyebrow">${project.category}</p>
         <h3>${project.title}</h3>
       </div>
-      <span class="project-card__tag">Featured</span>
+      <span class="project-card__tag">Live demo</span>
     </div>
     <p>${project.description}</p>
     <div class="project-card__meta">${techTags}</div>

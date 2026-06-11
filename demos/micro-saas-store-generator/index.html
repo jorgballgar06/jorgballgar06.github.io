@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de tiendas automaticas</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Generador de tiendas online automaticas</h1>
+    <p>Describe lo que quieres vender y genera landing, catalogo, copy y codigo base.</p>
+
+    <form id="form">
+      <textarea id="idea" rows="3" placeholder="Ej: quiero vender camisetas minimalistas"></textarea>
+      <button type="submit">Generar tienda</button>
+    </form>
+
+    <section id="status"></section>
+    <section id="result" class="hidden">
+      <h2>Resultado</h2>
+      <pre id="json"></pre>
+      <p id="paths"></p>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

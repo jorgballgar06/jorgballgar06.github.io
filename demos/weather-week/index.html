@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiempo semanal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-theme="dark">
+  <div class="aurora aurora--one" aria-hidden="true"></div>
+  <div class="aurora aurora--two" aria-hidden="true"></div>
+
+  <main class="app">
+    <header class="app__header panel">
+      <div class="head-top">
+        <div>
+          <p class="eyebrow">Pronóstico semanal</p>
+          <h1>Tiempo para los próximos 7 días</h1>
+          <p class="subtitle">Consulta el clima por ciudad, compárala o usa tu ubicación actual.</p>
+        </div>
+        <button id="theme-btn" type="button" class="secondary">Modo claro</button>
+      </div>
+    </header>
+
+    <section class="controls panel" aria-label="Controles de búsqueda de ciudad">
+      <form id="city-form" class="search-form">
+        <label for="city-input" class="sr-only">Ciudad</label>
+        <input id="city-input" name="city" type="text" placeholder="Ejemplo: Madrid" autocomplete="off" required />
+        <button type="submit">Buscar</button>
+      </form>
+      <form id="compare-form" class="search-form compare-form">
+        <label for="compare-input" class="sr-only">Comparar con ciudad</label>
+        <input id="compare-input" name="compareCity" type="text" placeholder="Comparar con: Barcelona" autocomplete="off" />
+        <button type="submit">Comparar</button>
+      </form>
+      <label class="quote-picker" for="quote-style">
+        Estilo de cita
+        <select id="quote-style" name="quoteStyle">
+          <option value="motivadora">Motivadoras</option>
+          <option value="zen">Zen</option>
+          <option value="corta">Cortas</option>
+        </select>
+      </label>
+      <button id="clear-compare-btn" type="button" class="secondary">Quitar comparación</button>
+      <button id="location-btn" type="button" class="secondary">Usar mi ubicación</button>
+    </section>
+
+    <section class="status" id="status" aria-live="polite"></section>
+
+    <section class="summary" id="summary" aria-label="Resumen del tiempo"></section>
+
+    <section class="chart panel" aria-label="Gráfico semanal del tiempo">
+      <div class="chart__head">
+        <h2>Evolución semanal</h2>
+        <div class="legend" id="legend">
+          <span><i class="dot dot--max"></i>Máxima ciudad principal</span>
+          <span><i class="dot dot--min"></i>Mínima ciudad principal</span>
+          <span><i class="dot dot--rain"></i>Lluvia ciudad principal</span>
+        </div>
+      </div>
+      <canvas id="forecast-chart" height="280"></canvas>
+      <div id="chart-tooltip" class="chart-tooltip" hidden></div>
+    </section>
+
+    <section class="cards" id="cards" aria-label="Pronóstico de la semana"></section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
