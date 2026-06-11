@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio personal con proyectos, aplicaciones y experiencia profesional." />
+  <title>Portfolio | Tu nombre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-orb bg-orb--one" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--two" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand__mark">T</span>
+      <span class="brand__text">Tu nombre</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Skills</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="button button--ghost" href="#contacto">Hablemos</a>
+  </header>
+
+  <main id="inicio" class="page">
+    <section class="hero">
+      <div class="hero__copy">
+        <p class="eyebrow">Portfolio de trabajo</p>
+        <h1>Creo productos web claros, útiles y con buena experiencia de usuario.</h1>
+        <p class="hero__lead">
+          Aquí puedes mostrar tus proyectos, apps, trabajos y experiencias de una forma profesional y fácil de compartir.
+        </p>
+
+        <div class="hero__actions">
+          <a class="button" href="#proyectos">Ver proyectos</a>
+          <a class="button button--ghost" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+
+        <div class="hero__stats" aria-label="Resumen rápido">
+          <article class="stat">
+            <strong>+10</strong>
+            <span>proyectos</span>
+          </article>
+          <article class="stat">
+            <strong>5</strong>
+            <span>tecnologías principales</span>
+          </article>
+          <article class="stat">
+            <strong>100%</strong>
+            <span>listo para GitHub Pages</span>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero__card">
+        <div class="profile">
+          <div class="profile__avatar">T</div>
+          <div>
+            <p class="profile__name">Tu nombre</p>
+            <p class="profile__role">Desarrollador web / Diseñador UI</p>
+          </div>
+        </div>
+
+        <div class="profile__details">
+          <p><span>Ubicación:</span> Madrid, España</p>
+          <p><span>Especialidad:</span> Frontend, apps y landing pages</p>
+          <p><span>Disponible para:</span> prácticas, freelance y colaboración</p>
+        </div>
+
+        <a class="profile__cta" href="#contacto">Contactar ahora</a>
+      </aside>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="section__heading">
+        <p class="eyebrow">Seleccionados</p>
+        <h2>Proyectos destacados</h2>
+        <p>Reúne aquí tus apps, webs y experimentos más importantes con una descripción corta y clara.</p>
+      </div>
+
+      <div class="projects" id="projects-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="sobre-mi" class="section split">
+      <div class="panel panel--accent">
+        <p class="eyebrow">Sobre mí</p>
+        <h2>Un poco de contexto para que te conozcan mejor.</h2>
+        <p>
+          Soy una persona a la que le gusta construir interfaces bonitas y útiles, ordenar ideas complejas y convertirlas en productos fáciles de usar.
+          Si quieres, este bloque puede hablar de tu formación, tu experiencia o el tipo de proyectos que te interesan.
+        </p>
+      </div>
+
+      <div class="panel">
+        <p class="eyebrow">Lo que aporto</p>
+        <ul class="list">
+          <li>Interfaces limpias y responsive.</li>
+          <li>Prototipos rápidos y buenas bases de código.</li>
+          <li>Enfoque práctico para entregar valor.</li>
+          <li>Comunicación clara y trabajo en equipo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section">
+      <div class="section__heading">
+        <p class="eyebrow">Herramientas</p>
+        <h2>Tecnologías y habilidades</h2>
+        <p>Los chips se generan desde JavaScript para que puedas cambiarlos sin tocar el maquetado.</p>
+      </div>
+      <div class="chips" id="skills-list"></div>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <div class="contact__box">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>¿Quieres hablar de un proyecto?</h2>
+          <p>
+            Puedes poner aquí tu correo, LinkedIn, GitHub o un formulario externo. GitHub Pages funciona muy bien con enlaces directos.
+          </p>
+        </div>
+
+        <div class="contact__links">
+          <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Hecho para publicar en GitHub Pages o desplegar en Netlify/Vercel.</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
