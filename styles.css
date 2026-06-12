@@ -318,13 +318,11 @@ h2 {
 .profile__avatar {
   width: 64px;
   height: 64px;
-  display: grid;
-  place-items: center;
   border-radius: 20px;
+  object-fit: cover;
   background: linear-gradient(145deg, rgba(243, 184, 107, 0.24), rgba(102, 227, 255, 0.18));
   border: 1px solid rgba(255, 255, 255, 0.12);
-  font-weight: 800;
-  font-size: 1.4rem;
+  flex-shrink: 0;
 }
 
 .profile__name {
