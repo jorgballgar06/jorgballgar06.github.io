@@ -4,9 +4,9 @@ const projects = [
     category: "Web app",
     description: "Explorador de personajes con fichas visuales, datos y navegación rápida.",
     tech: ["HTML", "CSS", "JavaScript"],
-    demoUrl: "./demos/dragon-ball-atlas/",
+    demoUrl: "./demos/dragon-ball-atlas/index.html",
     links: [
-      { label: "Demo", href: "./demos/dragon-ball-atlas/" },
+      { label: "Demo", href: "./demos/dragon-ball-atlas/index.html" },
       { label: "GitHub", href: "https://github.com/jorgballgar06" }
     ]
   },
@@ -15,9 +15,9 @@ const projects = [
     category: "Dashboard",
     description: "Aplicación para ver el tiempo semanal con búsqueda de ciudades y comparación.",
     tech: ["Open-Meteo", "Canvas", "Vanilla JS"],
-    demoUrl: "./demos/weather-week/",
+    demoUrl: "./demos/weather-week/index.html",
     links: [
-      { label: "Demo", href: "./demos/weather-week/" },
+      { label: "Demo", href: "./demos/weather-week/index.html" },
       { label: "GitHub", href: "https://github.com/jorgballgar06" }
     ]
   },
@@ -26,9 +26,9 @@ const projects = [
     category: "Tooling",
     description: "Generador de proyectos para crear páginas base y acelerar prototipos.",
     tech: ["Node.js", "Templates", "Automation"],
-    demoUrl: "./demos/micro-saas-store-generator/",
+    demoUrl: "./demos/micro-saas-store-generator/index.html",
     links: [
-      { label: "Demo", href: "./demos/micro-saas-store-generator/" },
+      { label: "Demo", href: "./demos/micro-saas-store-generator/index.html" },
       { label: "GitHub", href: "https://github.com/jorgballgar06" }
     ]
   }
