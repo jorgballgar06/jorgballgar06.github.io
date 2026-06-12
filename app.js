@@ -35,16 +35,26 @@ const projects = [
 ];
 
 const skills = [
-  "HTML semántico",
-  "CSS moderno",
+  "Python",
+  "R",
+  "SQL",
+  "Estadística",
+  "Inferencia",
+  "Visualización de datos",
+  "Álgebra",
+  "Análisis matemático",
+  "Tratamiento de datos",
+  "Modelos lineales",
+  "Bases de datos",
+  "MongoDB",
+  "Cassandra",
+  "Wireshark",
+  "Cisco Packet Tracer",
+  "NetINVM",
   "JavaScript",
-  "Responsive design",
-  "Accesibilidad",
   "Git y GitHub",
-  "APIs REST",
-  "UI/UX básico",
-  "Landing pages",
-  "Portfolios"
+  "Trabajo en equipo",
+  "Comunicación clara"
 ];
 
 const projectsGrid = document.getElementById("projects-grid");

@@ -502,6 +502,10 @@ h2 {
   padding: 24px;
 }
 
+.panel--full {
+  grid-column: 1 / -1;
+}
+
 .panel--accent {
   background:
     radial-gradient(circle at top right, rgba(102, 227, 255, 0.08), transparent 35%),
