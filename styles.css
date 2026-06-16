@@ -134,12 +134,12 @@ a {
 .brand__mark {
   width: 42px;
   height: 42px;
-  display: grid;
-  place-items: center;
-  border-radius: 14px;
+  display: block;
+  border-radius: 50%;
   background: linear-gradient(135deg, rgba(102, 227, 255, 0.22), rgba(143, 240, 195, 0.22));
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+  object-fit: cover;
 }
 
 .brand__text {
@@ -504,6 +504,25 @@ h2 {
   grid-column: 1 / -1;
 }
 
+.timeline-grid,
+.stack-grid,
+.summary-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.timeline-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stack-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.summary-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .panel--accent {
   background:
     radial-gradient(circle at top right, rgba(102, 227, 255, 0.08), transparent 35%),
@@ -517,6 +536,35 @@ h2 {
   display: grid;
   gap: 10px;
   color: var(--text);
+}
+
+.timeline-card,
+.stack-card,
+.summary-card {
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.timeline-card h3,
+.summary-card h3 {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+}
+
+.timeline-list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.summary-card p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .chips {
@@ -593,7 +641,10 @@ h2 {
   .hero,
   .projects,
   .split,
-  .contact__box {
+  .contact__box,
+  .timeline-grid,
+  .stack-grid,
+  .summary-grid {
     grid-template-columns: 1fr;
   }
 

@@ -1,19 +1,16 @@
 # Resumen profesional
 
+## Jorge Ballesteros García
+
+Estudiante de Ciencia de Datos en la Universidad de Valencia. Ha completado segundo curso del grado y está orientado a prácticas, TFG y primer empleo en el sector.
+
 ## Perfil
 
-Jorge Ballesteros García
+- Interés fuerte por la matemática y la estadística.
+- Perfil técnico orientado al análisis, la interpretación y la visualización de datos.
+- Capacidad para comunicar ideas complejas de forma clara y útil.
 
-Estudiante de Ciencia de Datos en la Universidad de Valencia. Ha completado segundo curso del grado y está enfocado en seguir desarrollándose en prácticas, TFG y su primer trabajo en el sector.
-
-## Intereses principales
-
-- Matemática y estadística.
-- Análisis e interpretación de datos.
-- Visualización clara y comunicación de resultados.
-- Resolución de problemas con enfoque práctico.
-
-## Formación destacada
+## Formación relevante
 
 ### Primer curso
 
@@ -41,22 +38,20 @@ Estudiante de Ciencia de Datos en la Universidad de Valencia. Ha completado segu
 - Programación paralela
 - Visualización de datos
 
-## Competencias técnicas
+## Stack técnico
 
 - Python
 - R
 - SQL
-- Bases de datos
 - MongoDB
 - Cassandra
 - Wireshark
 - Cisco Packet Tracer
 - NetINVM
 
-## Fortalezas
+## Qué aporta
 
-- Buena base en matemáticas y estadística.
-- Capacidad para organizar y presentar información compleja de forma clara.
-- Interés por seguir aprendiendo y por aplicar conocimiento en contextos reales.
-- Perfil orientado a prácticas, TFG y transición a empresa.
+- Base sólida en matemáticas y estadística.
+- Interés por seguir aprendiendo y aplicar conocimiento en contextos reales.
+- Buen encaje para prácticas académicas y primeros puestos orientados a datos.
 
