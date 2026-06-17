@@ -20,12 +20,12 @@ const projects = [
     ]
   },
   {
-    title: "Micro SaaS Generator",
-    category: "Tooling",
-    description: "Generador de proyectos para crear páginas base y acelerar prototipos.",
-    tech: ["Node.js", "Templates", "Automation"],
+    title: "Space Guard",
+    category: "Desktop app",
+    description: "Aplicación de escritorio para analizar el espacio en disco, localizar carpetas pesadas y sugerir limpiezas útiles.",
+    tech: ["Python", "Tkinter", "Windows"],
     links: [
-      { label: "Demo", href: "./demos/micro-saas-store-generator/index.html" },
+      { label: "Demo", href: "./demos/space-guard/index.html" },
       { label: "GitHub", href: "https://github.com/jorgballgar06" }
     ]
   }
